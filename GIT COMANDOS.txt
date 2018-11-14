@@ -1,0 +1,81 @@
+
+ALU23158+Aluno@ALU23158 MINGW64 ~
+$ mkdir novorepositorio
+mkdir: cannot create directory ‘novorepositorio’: File exists
+
+ALU23158+Aluno@ALU23158 MINGW64 ~
+$ cd novorepositorio/
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio
+$ pwd
+/c/Users/Aluno/novorepositorio
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio
+$ git init
+Initialized empty Git repository in C:/Users/Aluno/novorepositorio/.git/
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ touch.exe readme.md
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ dir
+readme.md
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git add readme.md
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git commit -m "Primeiro Commit"
+[master (root-commit) dbe39e8] Primeiro Commit
+ Committer: Aluno <Aluno@ALU23158.educa.sf>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git remote add novorepositorio https://github.com/Jefferson80/novorepositorio.git
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git remote -v
+novorepositorio https://github.com/Jefferson80/novorepositorio.git (fetch)
+novorepositorio https://github.com/Jefferson80/novorepositorio.git (push)
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git config --global user.name "Jefferson80"
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git config --global user.email "jeffersonblack@gmail.com"
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+fatal: unable to access 'https://github.com/Jefferson80/novorepositorio.git/': SSL certificate problem: unable to get local issuer certificate
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git config --global http.sslVerify false
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Jefferson80/novorepositorio/pull/new/master
+remote:
+To https://github.com/Jefferson80/novorepositorio.git
+ * [new branch]      master -> master
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$
