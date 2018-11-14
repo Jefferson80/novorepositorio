@@ -78,4 +78,121 @@ To https://github.com/Jefferson80/novorepositorio.git
  * [new branch]      master -> master
 
 ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
-$
+$ git diff
+diff --git a/readme.md b/readme.md
+index e69de29..6921cb1 100644
+--- a/readme.md
++++ b/readme.md
+@@ -0,0 +1 @@
++Um teste de conteudo - Jefferson
+\ No newline at end of file
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git commit readme.md -m "Arquivo Alterado"
+[master 5f734c5] Arquivo Alterado
+ 1 file changed, 1 insertion(+)
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git commit readme.md -m "Arquivo Alterado 2"
+On branch master
+nothing to commit, working tree clean
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+To https://github.com/Jefferson80/novorepositorio.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jefferson80/novorepositorio.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git commit readme.md -m "Arquivo Alterado 2"
+On branch master
+Untracked files:
+        teste.txt
+
+nothing added to commit but untracked files present
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+To https://github.com/Jefferson80/novorepositorio.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jefferson80/novorepositorio.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+To https://github.com/Jefferson80/novorepositorio.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jefferson80/novorepositorio.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git pull novorepositorio master
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/Jefferson80/novorepositorio
+ * branch            master     -> FETCH_HEAD
+   dbe39e8..c21ca84  master     -> novorepositorio/master
+Merge made by the 'recursive' strategy.
+ GIT COMANDOS.txt |  81 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ GIT tela 01.PNG  | Bin 0 -> 213176 bytes
+ GIT tela 02.PNG  | Bin 0 -> 178370 bytes
+ GIT tela 03.PNG  | Bin 0 -> 191062 bytes
+ MySQL.PNG        | Bin 0 -> 233169 bytes
+ 5 files changed, 81 insertions(+)
+ create mode 100644 GIT COMANDOS.txt
+ create mode 100644 GIT tela 01.PNG
+ create mode 100644 GIT tela 02.PNG
+ create mode 100644 GIT tela 03.PNG
+ create mode 100644 MySQL.PNG
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 564 bytes | 564.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Jefferson80/novorepositorio.git
+   c21ca84..014b10b  master -> master
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ ^C
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ ^C
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git add teste.txt
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git commit teste.txt -m "Arquivo Novo"
+[master c11bbfc] Arquivo Novo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 teste.txt
+
+ALU23158+Aluno@ALU23158 MINGW64 ~/novorepositorio (master)
+$ git push novorepositorio master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
